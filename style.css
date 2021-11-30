@@ -1,0 +1,55 @@
+/* GENERAL *****************************/
+body {
+    overflow-x: hidden !important;
+    background-color: brown;
+    margin: 0;
+  }
+  .flex-center{
+    display: flex;
+    justify-content: center;
+  }
+  .column-row__3{
+    width: 33%;
+    height: 100%
+  }
+  .column-row__4{
+    width: 50%;
+    height: 100%
+  }
+
+/* Header *********************** */
+header{
+    height: 300px;
+    max-height:300px;
+    min-width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo__right{
+     min-width: 25%;
+     height: 80px;
+  
+  }
+  .logo__left{
+    min-width: 25%;
+    height: 80px;
+ 
+  }
+
+  /* Big title *********************************/
+  .rotate{
+    transform: rotate(-3deg); 
+  }
+  .title-container{
+      text-align: center;
+      margin-top:-13vw;
+  }
+  .title{
+      
+      font-size: 13vw;
+  }
+  footer{
+   
+    width: 100%;
+  }
