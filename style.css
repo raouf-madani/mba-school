@@ -1,8 +1,32 @@
 /* GENERAL *****************************/
+@font-face {
+  font-family:"Quentin";
+  src: url("fonts/Quentin.ttf") format("truetype");
+}
+@font-face {
+  font-family:"Gotham";
+  src: url("fonts/Gotham/Gotham-Black.otf") format("truetype");
+}
+@font-face {
+  font-family:"Gotham-thin";
+  src: url("fonts/Gotham/Gotham-Thin.otf") format("truetype");
+}
+
 body {
     overflow-x: hidden !important;
-    background-color: brown;
     margin: 0;
+    background: url(images/background-real.jpg) no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+   
+  }
+  .mobile{
+    display: none !important;
+  }
+  .rotate{
+    transform: rotate(-4deg); 
   }
   .flex-center{
     display: flex;
@@ -25,31 +49,327 @@ header{
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+   
   }
-  .logo__right{
-     min-width: 25%;
+.logos{
      height: 80px;
-  
+    width: auto;
   }
-  .logo__left{
-    min-width: 25%;
-    height: 80px;
- 
+.ima{
+    padding-right: 10em;
+    width: 220px;
+  }
+  h3{
+    font-family: 'Gotham';
+    color: #CF9859;
+    text-align: center;
+    margin: 0 !important;
+  }
+ h4{
+    font-family: 'Gotham';
+    font-size: 2em;
+    color: #CF9859;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  h6{
+    font-family: 'Gotham';
+    font-size:1.3em;
+    color: #CF9859;
+    text-align: center;
+    letter-spacing: 3px;
   }
 
   /* Big title *********************************/
-  .rotate{
-    transform: rotate(-3deg); 
-  }
   .title-container{
       text-align: center;
-      margin-top:-13vw;
-  }
-  .title{
       
-      font-size: 13vw;
+  }
+  .title-container img{
+    position: relative;
+    top: 0.5em;
+    width: 720px; 
+    height:448px;
+  }
+  /* MBA AMÉRICAIN in text ****/
+  /*
+  .title{
+    color: white; 
+    font-family:"Gotham";
+    font-size: 11vw;
+    text-transform: uppercase;
+    margin-top:-2vw;
+    letter-spacing: 10px;
+  }
+  .sub-title{
+    color: white; 
+    font-family:"Gotham";
+    font-size: 4.7vw;
+    text-transform: uppercase;
+    margin-top:-8vw;
+  }
+  .sub-sub-title{
+    color: #CF9859; 
+    font-family:"Quentin";
+    font-size: 3.3vw;
+    margin-top:-5vw;
+  }*/
+
+  .subscription-text{
+    padding-top: 4.5em;
+    font-size: 3.5em;
+  }
+
+  .subscription-button{
+    font-family: 'Gotham';
+    font-size: 3em;
+    color: #FFF;
+    text-align: center;
+    background-color: #CF9859;
+    padding:10px 80px;
+    border: none !important;
+    border-radius: 100px;
+    box-shadow: 0.2px 0.2px 0.2px 0.2px grey;
+    text-transform: uppercase;
+  }
+  .wait-text{
+    padding-top: 4.5em;
+    font-size: 3.5em;
+  }
+  .wait-button{
+    font-family: 'Gotham';
+    font-size: 3.2em;
+    color: #FFF;
+    text-align: center;
+    background-color: #CF9859;
+    padding:5px 10px;
+    border: none !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transform: rotate(-3deg); 
+    position: relative;
+    top:0.3em;
+    z-index: -1;
+  }
+  .image-container{
+    height: 100%;
+    width: 100%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container img{
+    z-index: 999;
+   position: relative;
+   top:11.5em;
+  }
+  .titles-container{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top:17em;
+  }
+  .titles-container h4{
+   margin:0 !important;
+  }
+  .titles-container span{
+    font-family: 'Gotham';
+    color: #CF9859;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+  }
+  .pre-footer-left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .pre-footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pre-footer button{
+    font-family: 'Gotham';
+    font-size: 1.5em;
+    color: #FFF;
+    text-align: center;
+    background-color: #00AEEF;
+    padding:25px;
+    border: none !important;
+    border-radius: 50px;
+    text-transform: uppercase;
+    position: relative;
+    top: 6em;
+  }
+  .button__size-small{
+    font-size: 1.1em !important;
+    padding:20px 45px !important;
+    position: relative;
+    top: 8em !important;
   }
   footer{
-   
+    background-color: #333; 
+    height: 75px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p{
+    font-family: 'Gotham';
+    font-size: 16px;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+
+  @media screen and (max-width: 649px) and (min-width:450px){
+    body{
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+    }
+    .laptop-tablet{
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 850px) and (min-width:650px) {
+    .title-container img{
+      position: relative;
+      top: 0.5em;
+      width: 90%; 
+    }
+    body{
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+    }
+    .international-univ{
+      width: 80%;
+    }
+    .ima{
+      width: 140px;
+      padding-right: 3em;
+    }
+  
+    .subscription-text{
+      font-size: 2.5em;
+      padding-top:6.5em;
+    }
+    .subscription-button{
+      font-size: 2em;
+    }
+    .wait-text{
+      font-size: 2.5em;
+
+      padding-top: 4em;
+    }
+    .wait-button{
+      font-size: 2em;
+    }
+   h4{
+      font-size: 1em;
+    }
+    .image-container img{
+     width: 70%;
+     top:4em;
+    }
+    .titles-container{
+      top: 10em;
+    }
+    .titles-container h4{
+      font-size: 1.3em;
+    }
+    .titles-container span{
+      font-size: 1em;
+    }
+    .pre-footer button{
+      top: 1em;
+    }
+    .button__size-small{
+      top: 1.3em !important;
+    }
+  }
+
+  @media screen and (max-width:1150px) and (min-width:851px) {
+   
+    .title-container img{
+      position: relative;
+      top: 6em;
+    }
+    header{
+      height: 180px;
+    }
+    .ima{
+      padding-right: 7em;
+      width: 220px;
+    }
+    .subscription-text{
+      font-size: 2.5em;
+      padding-top: 8.5em;
+      position: relative;
+      right: 0.5em;
+    }
+  
+    .subscription-button{
+      padding:10px 50px;
+      font-size: 2em;
+    }
+    .wait-button{
+      font-size: 2.8em;
+    }
+    .content-container img{
+      padding-top: 10em;
+    }
+  }
+
+  @media screen and (max-width:1500px) and (min-width:1151px) {
+   
+    .title-container img{
+      position: relative;
+      top: 5em;
+      width: 720px; 
+      height:448px;
+    }
+    header{
+      height: 200px;
+    }
+    .subscription-text{
+      padding-top: 6em;
+      position: relative;
+      right: 0.4em;
+    }
+   
+    .subscription-button{
+      padding:10px 70px;
+      font-size: 2.5em;
+    }
+    .image-container img{
+      position: relative;
+      top:11.5em;
+    }
+    .titles-container{
+      position: relative;
+      top:16em;
+    }
+  }
+
+  /* International university image media queries ******/
+
+  @media screen and (max-width:975px) and (min-width:851px) {
+    .international-univ{
+      width: 80%;
+    }
+    .ima{
+      width: 180px;
+    }
   }
