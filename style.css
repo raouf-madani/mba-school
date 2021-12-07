@@ -16,9 +16,9 @@ body {
     overflow-x: hidden !important;
     margin: 0;
     background: url(images/background-real.jpg) no-repeat top center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
     background-size: 100% 100%;
    
   }
@@ -92,29 +92,6 @@ header{
     width: 720px; 
     height:448px;
   }
-  /* MBA AMÉRICAIN in text ****/
-  /*
-  .title{
-    color: white; 
-    font-family:"Gotham";
-    font-size: 11vw;
-    text-transform: uppercase;
-    margin-top:-2vw;
-    letter-spacing: 10px;
-  }
-  .sub-title{
-    color: white; 
-    font-family:"Gotham";
-    font-size: 4.7vw;
-    text-transform: uppercase;
-    margin-top:-8vw;
-  }
-  .sub-sub-title{
-    color: #CF9859; 
-    font-family:"Quentin";
-    font-size: 3.3vw;
-    margin-top:-5vw;
-  }*/
 
   .subscription-text{
     padding-top: 4.5em;
@@ -228,18 +205,161 @@ header{
     letter-spacing: 2px;
   }
 
-
-  @media screen and (max-width: 649px) and (min-width:450px){
+/* mobile version styles BEGIN**/
+  @media screen and (max-width: 649px) {
     body{
       -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
+    background-size: cover;
     }
     .laptop-tablet{
       display: none !important;
     }
+    .mobile{
+      display: block !important;
+    }
+    .title-container img{
+      position: relative;
+      top:16em;
+      width:530px; 
+      height:328px;
+    }
+    .univ-logo-container___mobile{
+      height: 300px;
+      width: 100%;
+      display: flex;
+      margin:0 !important;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      top:7em
+    }
+    .ima-container__mobile{
+      width: 100%;
+      display: flex;
+      position: relative;
+      margin:0 !important;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      bottom:15em;
+      
+    }
+    .ima__mobile{
+      width: 140px;
+      margin-right: 1em;
+    }
+    .subscription-container__mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 7em;
+    }
+    .subscription-text{
+      font-size: 1.5em;
+     padding-top: 0em;
+    
+    }
+  
+    .subscription-button{
+      padding:10px 40px;
+      font-size: 1em;
+    }
+    .wait-container__mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      top: 9em
+    }
+
+    .wait-text{
+      padding-top: 0em;
+      font-size: 1.2em;
+    }
+    .wait-button{
+      font-size: 1.2em;
+      padding:5px 10px;
+      position: relative;
+      top:0.2em;
+    }
+    
+   .infos-container__mobile{
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     padding:0 0 8em 0;
+     position: relative;
+     top: 7em;
+   }
+   .item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+   }
+   .item-container img{
+     width: 40%;
+     margin: 1.5em 0 0.5em 0;
+   }
+   .item-container h4{
+    margin:0 !important;
+    font-size: 1.2em;
+   }
+   .item-container span{
+     font-family: 'Gotham';
+     color: #CF9859;
+     letter-spacing: 2px;
+     font-size: 0.9em;
+   }
+    .buttons-container__mobile{
+      display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em 0 3em 0;
+    }
+    .buttons-container__mobile button{
+        font-family: 'Gotham';
+        font-size: 1em;
+        color: #FFF;
+        text-align: center;
+        background-color: #00AEEF;
+        padding:5px 13px;
+        border: none !important;
+        border-radius: 30px;
+        text-transform: uppercase;
+      
+    }
+    .button__size-small{
+      font-size: 1em !important;
+      padding:10px 17px !important;
+      position: none !important;
+      top: 0 !important;
+    }
+    footer{
+      background-color: #333; 
+      height: 75px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    footer p{
+      font-family: 'Gotham';
+      font-size: 13px;
+      color: #FFF;
+      text-transform: uppercase;
+
+    }
   }
+/* mobile version styles END **/
 
   @media screen and (max-width: 850px) and (min-width:650px) {
     .title-container img{
@@ -298,6 +418,7 @@ header{
     .button__size-small{
       top: 1.3em !important;
     }
+    
   }
 
   @media screen and (max-width:1150px) and (min-width:851px) {
